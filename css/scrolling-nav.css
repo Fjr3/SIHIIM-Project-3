@@ -1,0 +1,54 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Adjust a bit by me in order to fit my page */
+.img_container {
+	padding: 20px 20px;
+	-webkit-transition: background .5s ease-in-out,padding 1s ease-in-out;
+	-moz-transition: background .5s ease-in-out,padding 1s ease-in-out;
+	transition: background .5s ease-in-out,padding 1s ease-in-out;
+	
+	width:100%;
+	-webkit-transition: background .5s ease-in-out,width .8s ease-in-out;
+	-moz-transition: background .5s ease-in-out,width .8s ease-in-out;
+	transition: background .5s ease-in-out,width .8s ease-in-out;
+}
+.top-nav-collapse{
+	padding:0px 20px;
+	width:50%;
+}
+
+.navbar.navbar-default {
+	-webkit-transition: background .1s ease-in-out,height 0.7s ease-in-out;
+	-moz-transition: background .1s ease-in-out,height 0.7s ease-in-out;
+	transition: background .1s ease-in-out,height 0.7s ease-in-out;
+}
+
+.shrink_nav{
+	height:70px;	
+}
+
+.shrink_profile {
+    margin:0 !important;
+    margin-right: 10px !important;
+}
+
+.shrink_profile img{
+    width: 28%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    right: 0;
+    -webkit-transition: padding .5s ease-in-out,width .8s ease-in-out;
+    -moz-transition: padding .5s ease-in-out,width .8s ease-in-out;
+    transition: padding .5s ease-in-out,width .8s ease-in-out;
+}
+.shrink_profile h2{
+    margin-right: 80px !important;
+    margin-top: 0px !important;
+    font-size: 1.1em;
+}
+

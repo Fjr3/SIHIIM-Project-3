@@ -1,0 +1,122 @@
+/* CSS Document */
+/* ------------------ Image on login page ------------------------*/
+.login_pic {
+    width: 601px;
+    height: 500px;
+    background-image: url("../img/login/login_fun_reduced.png");
+    
+    -webkit-animation: play 0.8s steps(12) 0.5s forwards; /*chrome, safari*/
+       -moz-animation: play 0.8s steps(12) 0.5s forwards; /* firefox */
+        -ms-animation: play 0.8s steps(12) 0.5s forwards; /*IE*/
+         -o-animation: play 0.8s steps(12) 0.5s forwards; /*Opera*/
+            animation: play 0.8s steps(12) 0.5s forwards;
+					
+}
+
+@-webkit-keyframes play { /*chrome, safari*/
+   from { background-position:    0px; }
+     to { background-position: -6611; }
+}
+
+@-moz-keyframes play { /* firefox */
+   from { background-position:    0px; }
+     to { background-position: -6611px; }
+}
+
+@-ms-keyframes play { /*IE*/
+   from { background-position:    0px; }
+     to { background-position: -6611px; }
+}
+
+@-o-keyframes play { /*Opera*/
+   from { background-position:    0px; }
+     to { background-position: -6611px; }
+}
+
+@keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -6611px; }
+}
+
+/* ------------------ End log in page------------------------*/
+
+/* ------------------ Thumbnail on profile page ------------------------*/
+
+/* Thumbnail 1 */
+#profile #profile_body .thumbnail_1 a:hover {
+	display:block;
+	width:480.8px;
+	height:409px;
+	background-image: url("../img/user/thumbnail_1.png");
+    -webkit-animation: play1 0.1s steps(4) 0.1s forwards; /*chrome, safari*/
+       -moz-animation: play1 0.1s steps(4) 0.1s forwards; /* firefox */
+        -ms-animation: play1 0.1s steps(4) 0.1s forwards; /*IE*/
+         -o-animation: play1 0.1s steps(4) 0.1s forwards; /*Opera*/
+            animation: play1 0.1s steps(4) 0.1s forwards;
+					
+}
+
+@-webkit-keyframes play1 { /*chrome, safari*/
+   from { background-position:    0px; }
+     to { background-position: -1923.2px; }
+}
+
+@-moz-keyframes play1 { /* firefox */
+   from { background-position:    0px; }
+     to { background-position: -1923.2px; }
+}
+
+@-ms-keyframes play1 { /*IE*/
+   from { background-position:    0px; }
+     to { background-position: -1923.2px; }
+}
+
+@-o-keyframes play1 { /*Opera*/
+   from { background-position:    0px; }
+     to { background-position: -1923.2px; }
+}
+
+@keyframes play1 {
+   from { background-position:    0px; }
+     to { background-position: -1923.2px; }
+}
+/* --------------------------------------*/
+
+/* Thumbnail 2 */
+#profile #profile_body .thumbnail_2 a:hover {
+	display:block;
+	width:480.8px;
+	height:419.2px;
+	background-image: url("../img/user/thumbnail_2.png");
+    -webkit-animation: play2 0.1s steps(3) 0.1s forwards; /*chrome, safari*/
+       -moz-animation: play2 0.1s steps(3) 0.1s forwards; /* firefox */
+        -ms-animation: play2 0.1s steps(3) 0.1s forwards; /*IE*/
+         -o-animation: play2 0.1s steps(3) 0.1s forwards; /*Opera*/
+            animation: play2 0.1s steps(3) 0.1s forwards;
+					
+}
+
+@-webkit-keyframes play2 { /*chrome, safari*/
+   from { background-position:    0px; }
+     to { background-position: -1442.4px; }
+}
+
+@-moz-keyframes play2 { /* firefox */
+   from { background-position:    0px; }
+     to { background-position: -1442.4px; }
+}
+
+@-ms-keyframes play2 { /*IE*/
+   from { background-position:    0px; }
+     to { background-position: -1442.4px; }
+}
+
+@-o-keyframes play2 { /*Opera*/
+   from { background-position:    0px; }
+     to { background-position: -1442.4px; }
+}
+
+@keyframes play2 {
+   from { background-position:    0px; }
+     to { background-position: -1442.4px; }
+}

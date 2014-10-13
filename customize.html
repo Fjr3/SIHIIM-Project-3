@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--mobile -->
+        <title>Simplified - High Quality - Images</title>
+		
+        <!-- favicon -->
+        <link rel="icon" href="img/favicon.ico">
+        
+        <!-- CSS links -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <link rel="stylesheet" type="text/css" href="css/animation.css">
+        <link rel="stylesheet" type="text/css" href="css/scrolling-nav.css">
+        <link rel="stylesheet" type="text/css" href="css/lightGallery.css">
+        <!----> 
+        <!-- Javascript links -->
+		<script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/custom-hover.js"></script>
+		<script src="js/lightGallery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- lightbox plugin work with this -->       
+        <script src="js/lightGallery.min.js"></script>
+
+        <!-- some specific CSS style for this page only -->
+        <style>
+			html, body { 
+				height: 100%;
+				width: 100%;
+                background-color:#6C7989;
+			}
+		</style> 
+              
+        <!---->
+        <!-- Script Light Gallery -->
+        <script>
+         $(document).ready(function() {
+            $("#rel1").lightGallery({loop:true,rel:true}); 
+            $("#rel2").lightGallery({loop:true,rel:true});
+			$("#rel3").lightGallery({loop:true,rel:true});
+         // **************
+         // Grayscale hover
+        $('img').hover(function() {
+                $(this).addClass('grayscale');
+            }, function() {
+                $(this).removeClass('grayscale');
+            });
+        // ************
+		});
+
+        </script>
+        <!-- ************** -->
+        
+    <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+    <script>var __adobewebfontsappname__="dreamweaver"</script>
+	<script src="http://use.edgefonts.net/dancing-script:n4:default;eb-garamond:n4:default;amatic-sc:n4:default;josefin-sans:n4:default;acme:n4:default.js" type="text/javascript"></script>
+	</head>
+    
+    <body id="custom-gallery">
+        <!-- Vertical Nav -->
+        <ul class="nav nav-stacked col-lg-2 left-nav">
+            <li class="name-profile">
+                <a style="padding:0 !important;margin-top:10%" href="profile.html">
+                	<img src="img/profile.jpg">
+                </a>
+                <a style="color:#e74c3c" href="profile.html">Jimmy Nguyen</a>
+            </li>
+            <li>
+                <a style="color:#FFF" href="#">
+                    <span class="glyphicon glyphicon-eye-open custom-glyph"></span>
+                    See later
+                </a>
+            </li>
+            <li class="active">
+                <a style="color:#F7CA18" href="#">
+                    <span class="glyphicon glyphicon-heart custom-glyph"></span>
+                    Favorites
+                </a>
+            </li>
+            <li>
+                <a style="color:#EF4836" href="#">
+                    <span class="glyphicon glyphicon-link custom-glyph"></span>
+                    Share history
+                </a>
+            </li>
+            <li>
+                <a style="color:#99B433" href="#">
+                    <span class="glyphicon glyphicon-download-alt custom-glyph"></span>
+                    Downloads
+                </a>
+            </li>
+            <li>
+                <a style="color:#22A7F0" href="#">
+                    <span class="glyphicon glyphicon-th-large custom-glyph"></span>
+                    Look up similar
+                </a>
+            </li>
+            <li>
+                <ul id="viewstyle" class="nav nav-justified link-diff"> <!-- link-diff to make exception -->
+                    <li class="active">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-picture custom-glyph"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-film custom-glyph"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-transfer custom-glyph"></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav nav-pills nav-stacked col-lg-2 bottom">
+            <li>
+                <a  style="color:#fff" href="index.html">
+                    <span class="glyphicon glyphicon-home custom-glyph"></span>
+                    Home
+                </a>
+            </li>
+        </ul>
+        <!-- ********************** -->
+
+        <!-- ************ Image gallery *************** -->
+        <section class="gallery col-lg-10">
+        <div id="title-bar" class="colg-lg-10">ArtGerm newest</div>
+            <table >
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul id="rel1" data-rel="image-gallery">
+                                <li data-src="img/custom_gallery/1.jpg"> 
+                                    <a href="#">
+                                    <img src="img/custom_gallery/1.jpg" />
+                                    </a> 
+                                </li>
+                                <li data-src="img/custom_gallery/2.jpg" > 
+                                    <a href="#">
+                                    <img src="img/custom_gallery/2.jpg" />
+                                    </a> 
+                                </li>
+                                <li data-src="img/custom_gallery/3.jpg"> 
+                                    <a href="#">
+                                    <img src="img/custom_gallery/3.jpg" />
+                                    </a> 
+                                </li>
+                                <li data-src="img/custom_gallery/4.jpg" > 
+                                    <a href="#">
+                                    <img src="img/custom_gallery/4.jpg" />
+                                    </a> 
+                                </li>
+                            </ul>             
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul id="rel2" data-rel="image-gallery">
+                                <li data-src="img/custom_gallery/5.jpg"> 
+                                    <a href="#">
+                                    <img src="img/custom_gallery/5.jpg" />
+                                    </a> 
+                                </li>
+                                <li data-src="img/custom_gallery/6.jpg" > 
+                                    <a href="#">
+                                    <img src="img/custom_gallery/6.jpg" />
+                                    </a> 
+                                </li>
+                                <li data-src="img/custom_gallery/7.jpg"> 
+                                    <a href="#">
+                                    <img src="img/custom_gallery/7.jpg" />
+                                    </a> 
+                                </li>
+                                <li data-src="img/custom_gallery/8.jpg" > 
+                                    <a href="#">
+                                    <img src="img/custom_gallery/8.jpg" />
+                                    </a> 
+                                </li>
+                            </ul>             
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul id="rel3" data-rel="image-gallery">
+                                <li data-src="img/custom_gallery/9.jpg"> 
+                                    <a href="#">
+                                    <img src="img/custom_gallery/9.jpg" />
+                                    </a> 
+                                </li>
+                                <li data-src="img/custom_gallery/10.jpg" > 
+                                    <a href="#">
+                                    <img src="img/custom_gallery/10.jpg" />
+                                    </a> 
+                                </li>
+                                <li data-src="img/custom_gallery/11.jpg"> 
+                                    <a href="#">
+                                    <img src="img/custom_gallery/11.jpg" />
+                                    </a> 
+                                </li>
+                                <li data-src="img/custom_gallery/12.jpg" > 
+                                    <a href="#">
+                                    <img style="height:100%" src="img/custom_gallery/12.jpg" />
+                                    </a> 
+                                </li>
+                            </ul>             
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- ******************* -->
+    </body>
+</html>
+

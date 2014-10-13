@@ -1,0 +1,813 @@
+body {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 2em;
+}
+
+.full-page {
+	width: 100%;
+	position: relative;
+	display: table;
+	float: inherit;
+	min-height: 1080px;
+
+}
+
+.mainnav {
+	padding-top: 65px;
+	width: 40%;
+	text-align: center;
+
+}
+.signup-btn {
+	margin-top: 350px;
+	margin-right: 150px;
+	text-align: center;
+	vertical-align: middle;
+}
+.mainnav .glyphicon   {
+	font-size: 1.8em;
+	padding-bottom: 15px;
+}
+#page1 .custom-body {
+	padding-top: 150px;
+}
+#page1 {
+	background-color: #2c3e50;
+	color: #FFFFFF;
+	text-align: justify;
+}
+#page1 li a:hover{
+	color:#e74c3c;
+	border-radius: 3px;
+}
+#page1 li.active{
+	color:#e74c3c;
+}
+#page1 a{
+	color:#fff;
+}
+#page2 .p-align {
+	text-align: justify;
+	margin: 0 45px;
+}
+.img-cen  {
+	margin: auto;
+}
+#page2 h2   {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	color: #e74c3c;
+	font-weight: bolder;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-size: xx-large;
+}
+#page2 {
+	padding-top: 150px;
+	background-color: #eee;
+}
+.mainnav .active   {
+	text-decoration: underline;
+}
+footer  {
+	background-color: #2c3e50;
+	display: table-footer-group;
+	height: 100px;
+}
+
+#logo_footer{
+	padding-top : 20px;
+	padding-bottom : 20px;
+	float: left;
+}
+#logo_header{
+	padding-top : 20px;
+	padding-bottom : 20px;
+}
+
+#copyright{
+	color: #FFFFFF;
+	margin: 25px;
+	float: left;	
+}
+
+.custom_header{
+	height: 150px;
+	color: #FFFFFF;
+}
+.full-width {
+	width: 100%;
+	background-color: #2c3e50;
+	display: table;
+}
+
+body{
+	background-color:#eee;	
+}
+#tabs li {
+	display: inline;
+}
+.form-group {
+	width: 80%;
+}
+.nav-tabs{
+	margin-top:100px;
+}
+.nav-tabs li.active a {
+	border: none;
+	background-color: #e74c3c;
+	color: #FFFFFF;
+	border-radius:20px 20px 0px 0px;
+}
+.nav-tabs.nav-justified li a {
+	border-radius:20px 20px 0px 0px;
+}
+.nav-tabs li a{
+	background-color:#BBBBBB;
+	border:none;
+	margin:auto;	
+	color:#FFFFFF;
+}
+.tab-pane{
+	background-color:#FFFFFF;
+	height:500px;	
+	padding-top:40px;
+}
+
+#submit_btn {
+	width:80%;
+	margin-top:40px;
+	display:inline-table;
+}
+
+.nav-tabs.nav-justified .active a:hover {
+    background-color: #f1c40f;
+	font-weight:bolder;
+}
+
+.nav-tabs.nav-justified a:hover{
+	background-color: #DCDCDC;
+	font-weight:bolder;
+}
+.custom-btn {
+	border-radius:0;
+}
+.navbar-brand {
+	margin-top: 15px;
+}
+.navbar.navbar-default {
+	background-color: #2C3E50;
+	border-bottom-color: #7C7C7C;
+	border-style: none none solid;
+	border-bottom-width: medium;
+}
+.navbar {
+	border-radius: 0;
+}
+#demo .navbar {
+	border-radius: 0;
+	padding-left: 25px;
+	margin-bottom:0;
+	position:fixed;
+}
+#pic1 {
+	margin-top: 100px;
+}
+.btn-style {
+	border: 0;
+	-moz-box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* ---------------- Demo Page -------------------- */
+#demo_body {
+	width: 100%;
+	height: 100%;
+}
+#demo_body .row.col-lg-5, #demo_body .col-lg-7 {
+	float: none;
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 25;
+	height: 100%;
+}
+#demo_body .col-lg-7{
+	padding-left:200px;
+}
+#demo .row.content_box {
+	width: 50%;
+	margin: 25px auto;
+	text-align: justify;
+	position:relative;
+	top:50%;
+	-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+}
+#demo section .texture {
+	height: 100%;
+	width: 40%;
+	background-color: #ecf0f1;
+	position: fixed;
+	z-index: 5;
+}
+#demo{
+	background-color:#FFFFFF;
+}
+#demo #demo_section {
+	height:100%;
+}
+
+#demo #demo_video{
+	position:relative;
+	top:50%;
+	-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);	
+}
+
+.navbar-fixed-top {
+	height: 150px;	
+}
+
+a#test{
+	position:absolute;
+	right:0;
+	display: -webkit-inline-box;
+	margin-right: 50px;
+	margin-top:20px;
+}
+#test h2,.shrink_profile h2{
+	margin:0;
+	width: auto;
+	padding-top:10%;
+	margin-right:10%;
+}
+
+/* -------------------------  End of Demo page ---------------------- */
+
+/* Section Separator by Codrop
+ * Not by me */
+ 
+ /* Zig Zag (3d up and simple down) */
+.ss-style-zigzag::after {
+    right: 0;
+    left: 0;
+    z-index: 10;
+    display: block;
+    height: 90px;
+    background-size: 50px 100%;
+  }
+
+.ss-style-zigzag::after {
+	top: 100%;
+	background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, #bdc3c7), color-stop(0.25, #bdc3c7));
+	background-image: 
+		-webkit-linear-gradient(315deg, #bdc3c7 25%, transparent 25%), -webkit-linear-gradient(225deg, #bdc3c7 25%, transparent 25%);
+	background-image: 
+		linear-gradient(135deg, #bdc3c7 25%, transparent 25%),
+		linear-gradient(225deg, #bdc3c7 25%, transparent 25%);
+	background-position: 50%;
+}
+
+/* ----------------------------- end of separator -------------------*/
+
+/* ---------------------- Function page -----------------------------*/
+
+#function #function_section .container {
+	padding: 0;
+	width : 100%;
+}
+
+#function .navbar-fixed-top {
+	position: static;	
+}
+
+#function_section .row {
+	background-color:#bdc3c7;
+	height:50%;
+	margin: 0;
+	height:400px;
+}
+#function_section .vertical{
+	position:relative;
+	top:50%;
+	margin-left:0;
+	float:left;
+	display:inline;
+}
+#function_section .custom-btn{
+	float:right;
+	display: inline;
+	margin-top:1%;
+	background-color: #e74c3c;
+	color:#fff;
+}
+#function_section2 .vertical{
+	position:relative;
+	top:50%;
+	margin-left:0;
+}
+.center-block.vertical.dashed{
+	border: dashed thick;
+	border-radius: 5px;
+	padding: 3%;
+	margin-right: 20%;
+}
+#function_section img{
+	position:relative;
+	top:50%;
+	-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);	
+}
+#function .navbar {
+	margin-bottom:0;	
+}
+
+#function_section_2 .container {
+	width:100%;
+	margin-top:5%;	
+}
+#function_section_2 .row {
+	margin:0;	
+}
+
+/* ---------------------- End of Function page -----------------------------*/
+
+/* ---------------------- User profile page -----------------------------*/
+section#profile_section{
+	padding-top:170px;
+	height:100%;
+}
+section#profile_chart_section{
+	background-color:#E2E4E2;
+	height:100%;
+	padding-top:10%;
+}
+
+#profile #profile_body .thumbnail_1 a{
+	display:block;
+	width:480.8px;
+	height:409px;
+	background-image: url("../img/user/thumbnail_1.png");
+	background-position: 0px 0px;
+}
+
+#profile #profile_body .thumbnail_2 a{
+	display:block;
+	width:480.8px;
+	height:419.2px;
+	background-image: url("../img/user/thumbnail_2.png");
+	background-position: 0px 0px;
+}
+
+
+#profile #profile_section .col-lg-12 {
+	width: 100%;
+	margin: auto;
+	
+}
+
+#profile_section .nav-tabs {
+	margin-top: 0;
+	border: 0;
+	padding-left:35%;
+}
+#profile_section .tab-pane {
+	background-color: transparent;
+	height:0;
+	padding:0;
+}
+
+#profile_section .nav-tabs>li.active>a:hover,
+#profile_section .nav-tabs>li.active>a:focus {
+	color:#FFF;
+	border:0;
+	background-color:#e74c3c;
+}.no-round { /* better border radius to fit with tab title (achievement bar) */
+	border-top-left-radius: 0px;
+}
+
+#profile_section .btn-lg{
+	height: 70px;
+	padding-left:0.5em;
+	padding-right:0.5em;
+}
+#profile_section .btn-group .btn-lg{
+	border:0;
+	border-right:solid medium #D9D9D9;
+}
+#profile_section .btn-group .btn-lg{
+	color: #808080;
+	font-size:1.6em;
+}
+.btn-group>.long-btn {
+	width: 40%;
+}
+#profile_section .btn-group.col-lg-12 {
+	padding: 0;
+}
+#profile_section .btn-group>.disabled {
+	background-color:#bdc3c7;
+	border:0;
+	box-shadow:inset 0px 0px 5px #000000;
+}
+#profile_section>.container {
+	width:100%;	
+	margin-top:2%;
+}
+.thumbnail_1 a,
+.thumbnail_2 a {
+	position:relative;
+	margin:0 auto;	
+}
+#profile_section .col-lg-6{
+	margin-left:0;
+	margin-right:0;
+}
+/*gallery button 1*/
+#profile #btn_gallery_1 {
+	background-color: #00ABA9;
+	color:#fff;
+}
+
+#btn_gallery_1:hover,
+#btn_gallery_1:focus,
+#btn_gallery_1:active,
+#btn_gallery_1.active{
+	background-color: #009FAC !important;
+	border: solid medium #009FAC !important;
+}
+/* gallery button 2 */
+#profile #btn_gallery_2 {
+	background-color: #99B433;
+	color:#fff;
+}
+
+#btn_gallery_2:hover,
+#btn_gallery_2:focus,
+#btn_gallery_2:active,
+#btn_gallery_2.active{
+	background-color: #A1A732 !important;
+	border: solid medium #A1A732 !important;
+}
+.row.profile-chart {
+	width: 50%;
+}
+.profile-chart div{
+	color: #FFFFFF;
+	background-color: #16a085;
+	width: 32%;
+	display: inline-table;
+	text-align: center;
+	padding-right: 5px;
+	padding-top : 10px;
+	padding-bottom : 10px;
+}
+.profile-chart div:hover{
+	background-color:#27ae60 !important;
+}
+#profile_chart_section .row{
+	margin:0 auto;	
+}
+.custom-active{
+	background-color:#27ae60 !important;
+	font-weight:bold;
+         	box-shadow:inset 0px 0px 3px #000000;
+	-webkit-box-shadow:inset 0px 0px 3px #000000;
+	   -moz-box-shadow:inset 0px 0px 3px #000000;
+}
+		/*======= Profile page graph =========== */
+#bar-chart {
+  width: 900px;
+  height: 600px;
+  position: relative;
+  margin:auto;
+}
+#bar-chart::before, #line-chart::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 220px;
+  height: 30px;
+  left: 365px;
+  top: 514px;
+  background: #FAFAFA;
+  box-shadow: 1px 1px 0 0 #DDD;
+}
+	/* ====== End profile page graph ============ */
+/*=============================== End of profile page ================================ */
+
+/* ++++++++++++++++ Gallery page +++++++++++++++++++++++++ */
+.frame{
+	width:100%;
+	height:430px;
+	overflow: hidden;
+    position: relative;
+}
+.frame img{
+	width:110%;
+	height:auto;
+	
+}
+
+#gallery .thumbnail{
+	padding:0;
+	background-color:transparent;
+	border:0;
+	margin:0;
+	border-radius:0;
+}
+#gallery .col-lg-3 {
+	padding:0;
+}
+#gallery .row{
+	padding-left:15px;
+	padding-right:15px;
+}
+#gallery section{
+	padding-top:25px;	
+}
+
+/* hover effect | learnt from mattbango.com */
+.viewport span {
+    display: none;
+    font-size: 3.0em;
+    font-weight: bold;
+    height: 100%;
+    padding-top: 120px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    z-index: 100;
+}
+#gallery #gallery_propic{
+	position:absolute;
+	width:125px;
+	right:2%;
+	top:17%;	
+}
+#gallery h2{
+	position: absolute;
+	right: 11%;
+	top: 25%;
+	color: #fff;
+}
+
+/* --- Dark hover background ------------------------------------------------------------ */
+.dark-background {
+    background-color: rgba(15, 15, 15, 0.6);
+    color: #fff;
+    text-shadow: #000 0px 0px 20px;
+}
+
+/* end of hover effect */
+
+.viewport span .navbar-default{
+	background-color: rgba(0,0,0,0.80);	
+}
+/* ---------- header bar when hover ------------- */
+.viewport span .top-hover{
+	top: 0;
+	width: 100%;
+	position: absolute;
+	border:0;
+	height:80px;
+}
+/* ---------- footer bar when hover ------------- */
+.viewport span .bot-hover{
+	bottom: 0;
+	width: 100%;
+	position: absolute;
+	margin-bottom:0;
+	border:0;
+	height:80px;
+}
+.bot-hover div:first-child,
+.top-hover div:first-child{
+	height: 100%;
+}
+.bot-hover ul.nav.nav-pills.nav-justified{
+	width: 50%;
+	height: 100%;
+}
+.top-hover ul.nav.nav-pills.nav-justified{
+	height:100%;
+}
+.bot-hover li .btn-danger,
+.top-hover li .btn-danger{
+	height: 100%;
+	border-radius:0;
+	border:0;
+	vertical-align:top;
+	line-height:7;
+	background-color:transparent;
+	width:80px;
+}
+.bot-hover li .btn-danger:hover,
+.top-hover li .btn-danger:hover {
+	background-color:#34495e;
+	-webkit-transition: background .4s ease-in-out,padding 2s ease-in-out;
+	transition: background .4s ease-in-out,padding 2s ease-in-out;	
+}
+.bot-hover li .btn-danger:active,
+.top-hover li .btn-danger:active {
+	background-color:#ecf0f1;
+	box-shadow:none !important;
+	border-radius:0 !important;
+	-webkit-transition: background .1s ease-in-out,padding 2s ease-in-out;
+	transition: background .1s ease-in-out,padding 2s ease-in-out;	
+}
+.bot-hover .col-lg-5{
+	height:100%;
+	right: 0;
+	position: absolute;
+	padding: 0;	
+}
+.top-hover .col-lg-7{
+	height:100%;
+	right:0;
+	position:absolute;
+	padding:0;	
+}
+.bot-hover li,
+.top-hover li{
+	height:100%;
+	float:right;
+	width:80px;
+}
+.bot-hover li .custom-glyph,
+.top-hover li .custom-glyph{
+	font-size:3em;
+}
+.bot-hover btn:active,button:focus,
+.top-hover btn:active,button:focus{
+	outline-color:#f1c40f !important;
+}
+/* -------- customize pagination \\\ gallery page ----------- */
+#gallery .pagination{
+	width: 100%;
+}
+#gallery .pagination>li {
+	display: block;
+	float: left;
+	position: relative;
+	position: 0 auto;
+	left: 51%;
+	transform: translateX(-200%);
+	-webkit-transform: translateX(-200%);
+	-moz-transform: translateX(-200%);
+}
+/* ---------- minimized nav -----------*/
+#gallery .btn-success{
+	height: 15px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	z-index:100;
+	position:fixed;
+	color: #fff;
+	background-color: #2c3e50;
+	border-color: #4cae4c;
+	width: 100%;
+}
+#gallery .collapsefx .navbar-fixed-top{
+	min-height:0px;
+	height:0px;
+	-webkit-transition: height .6s ease-in-out,padding 2s ease-in-out;
+		    transition: height .6s ease-in-out,padding 2s ease-in-out;		
+}
+#gallery .circle{
+	background-color: #2c3e50;
+	position: relative;
+	z-index: 500;
+	border-radius: 100%;
+	width: 3%;
+	margin: 0 auto;
+	top: -5px;
+}
+#gallery .navbar-fixed-bottom {
+	background-color:#2c3e50;
+}
+p {
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+/********Customize Gallery Page *************/
+#custom-gallery img{
+	width: 100%;
+}
+#custom-gallery .gallery li{
+	width:25%;
+}
+#custom-gallery .gallery td{
+	line-height:0;
+}
+#custom-gallery .gallery ul{
+	display:-webkit-inline-box;
+	height: 300px;
+	overflow: hidden;
+	list-style-type: none;
+	padding-left:15px;
+	padding-right:15px;
+	margin:0;
+}
+.grayscale{
+	   -moz-filter: brightness(125%); 
+	     -o-filter: brightness(125%); 
+	    -ms-filter: brightness(125%); 
+	-webkit-filter: brightness(125%); 
+	filter: brightness(125%);
+}
+#custom-gallery .gallery table{
+	margin-top: 20px;
+}
+#custom-gallery .left-nav{
+	height:100%;
+	background-color:#22313F;
+	padding:0;
+	font-weight: bolder;
+}
+#custom-gallery #title-bar{
+	padding: 10px;
+	padding-left:20px;
+	font-size:25px;
+	font-weight: bolder;
+	font-family: "Adobe Clean UI", Arial, "Baskerville Old Face";
+	font-style: normal;
+	background-color: #00ABA9;
+	color:#FFECDB;
+}
+#custom-gallery .gallery.col-lg-10{
+	padding:0;
+}
+.left-nav li,.bottom li{
+	box-shadow: inset 0px 2px 0px 0px rgba(0,0,0,0.2); 
+}
+
+#viewstyle li{
+	box-shadow: inset 2px -2px 0px 0px rgba(0,0,0,0.2); 
+}
+
+.left-nav a:hover, .bottom a:hover{
+	background-color:#3498db !important;
+	border-radius:0 !important;
+	color:#FFF !important;
+	padding:12px !important;
+	-webkit-transition: background .6s ease-in-out,color 0.7s ease-in-out,padding 0.2s ease-in-out;	
+	transition: background .6s ease-in-out, color 0.7s ease-in-out,padding 0.2s ease-in-out;		
+}
+.left-nav a:active, .bottom a:active{
+	background-color:#2c3e50 !important;
+	color:#FFF !important;
+	padding:14px !important;
+}
+
+.link-diff a:hover{
+	padding-top:10px !important;
+	padding-bottom:10px !important;
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+	font-size:1em;
+	transition: padding .5s ease-in-out, font-size .5s ease-in-out;
+}
+#custom-gallery .glyphicon{
+	padding-right:25%;
+	left:10%;
+	font-size:1.5em;
+}
+#custom-gallery .bottom{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0;
+	font-weight:bolder;	
+}
+#custom-gallery .active,#custom-gallery .active a:first-child{
+	border-radius:0px !important;
+	background-color:#8e44ad !important;
+	color:#F7CA18 !important;
+	box-shadow: inset 0px 0px 7px 2px rgba(0,0,0,0.5); 
+}
+.name-profile a{
+	display:inline-block !important;
+	left:50% !important;
+	padding-top: 20px !important;
+	-webkit-transform: translateX(-50%);
+	   -moz-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	     -o-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+.name-profile a:hover{
+	background-color:transparent !important;
+	color:#FFF !important;
+	padding:20px !important;
+}
