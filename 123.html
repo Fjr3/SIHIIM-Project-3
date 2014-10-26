@@ -94,33 +94,46 @@
 		console.log("IMAGE BEING DISPLAYED");
         switch (numSelected){
           case 1:
-            document.getElementById("myFrame").style.display = 'inline';
-            document.getElementById("myFrame").src = frame;
+            if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
+              document.getElementById("myFrame").style.display = 'inline';
+              document.getElementById("myFrame").src = frame;
+            }
             break;
           case 2:
-            document.getElementById("myFrame2").style.display = 'inline';
-            document.getElementById("myFrame2").src = frame;
+            if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
+              document.getElementById("myFrame").style.display = 'inline';
+              document.getElementById("myFrame").src = frame;
+            }
             break;
           case 3:
-            document.getElementById("myFrame3").style.display = 'inline';
-            document.getElementById("myFrame3").src = frame;
+            if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
+              document.getElementById("myFrame").style.display = 'inline';
+              document.getElementById("myFrame").src = frame;
+            }
             break;
           case 4:
-            document.getElementById("myFrame4").style.display = 'inline';
-            document.getElementById("myFrame4").src = frame;
+            if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
+              document.getElementById("myFrame").style.display = 'inline';
+              document.getElementById("myFrame").src = frame;
+            }
             break;
           case 5:
-            document.getElementById("myFrame5").style.display = 'inline';
-            document.getElementById("myFrame5").src = frame;
+            if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
+              document.getElementById("myFrame").style.display = 'inline';
+              document.getElementById("myFrame").src = frame;
+            }
             break;
           case 6:
-            document.getElementById("myFrame5").style.display = 'inline';
-            document.getElementById("myFrame5").src = frame;
+            if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
+              document.getElementById("myFrame").style.display = 'inline';
+              document.getElementById("myFrame").src = frame;
+            }
             break;
           default:
             break;
         }
       }
+
     </script>
   </head>
   <body id="drive-page">
@@ -128,7 +141,7 @@
       <img class="drivePage-logo" src="img/Logo_notxt.png" width="auto" height="40px" alt=""/>
       <span id="linkSymbol" class="glyphicon glyphicon-link"></span>
       <img class="drivePage-logo" src="img/Drive API/Drive_Logo.png" width="auto" height="40px" alt=""/>
-      <h1 contenteditable="true">Hello</h1>
+      <h1 style="padding-left:20px;color:#7f8c8d" id="titleEdit" contenteditable="true">... gallery name</h1>
       <div class="btn btn-lg btn-danger addBtn btn-style"><span class="glyphicon glyphicon-plus"></span><strong>  Add</strong></div>
   </header>
   <div class="addBG">
@@ -179,5 +192,13 @@
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/jquery.easing.min.js"></script>
   <script src="js/custom-hover.js"></script>
+  <script>
+    $('#titleEdit').click(function(event) {
+      /* Act on the event */
+      $(this).css({
+        color: '#fff',
+      });
+    });
+  </script>
 </body>
 </html>
