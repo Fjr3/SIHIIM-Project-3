@@ -50,10 +50,10 @@
       function createPicker() {
         if (pickerApiLoaded && oauthToken) {
           var picker = new google.picker.PickerBuilder().
-              addView(google.picker.ViewId.PHOTOS).
+              addView(google.picker.ViewId.DOCS_IMAGES_AND_VIDEOS).
               addView(google.picker.ViewId.DOCS_IMAGES).
               addView(google.picker.ViewId.PHOTO_UPLOAD).
-              addView(google.picker.ViewId.RECENTLY_PICKED).
+              addView(google.picker.ViewId.IMAGE_SEARCH).
               setOAuthToken(oauthToken).
               setDeveloperKey(developerKey).
               setCallback(pickerCallback).
@@ -66,17 +66,29 @@
       function pickerCallback(data) {
         var url = 'nothing';
         if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED) {
-          var doc = data[google.picker.Response.DOCUMENTS][0];
-          url = doc[google.picker.Document.URL];
+            for (i=0; i<google.picker.Response.length;i++){
+              var doc = data[google.picker.Response.DOCUMENTS][0];
+              url = doc[google.picker.Document.URL];
+            }
         }
-        var message = 'You picked: ' + url;
-        document.getElementById('result').innerHTML = message;
+        var frame = url;
+        document.getElementById("myFrame").src = frame;
+        document.getElementById("myFrame2").src = frame;
+        document.getElementById("myFrame3").src = frame;
+        document.getElementById("myFrame4").src = frame;
+        document.getElementById("myFrame5").src = frame;
       }
+      
     </script>
   </head>
   <body>
+    <button onclick="onPickerApiLoad()">Click me</button>
     <div id="result"></div>
-
+    <iframe id="myFrame" width="640" height="480"></iframe>
+    <iframe id="myFrame2" width="640" height="480"></iframe>
+    <iframe id="myFrame3" width="640" height="480"></iframe>
+    <iframe id="myFrame4" width="640" height="480"></iframe>
+    <iframe id="myFrame5" width="640" height="480"></iframe>
     <!-- The Google API Loader script. -->
     <script type="text/javascript" src="https://apis.google.com/js/api.js?onload=onApiLoad"></script>
   </body>

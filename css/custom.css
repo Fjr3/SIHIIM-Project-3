@@ -811,3 +811,52 @@ p {
 	color:#FFF !important;
 	padding:20px !important;
 }
+
+/************ Goole Picker ****************/
+.plus-sign{
+	font-size:140px;
+	color:transparent;
+}
+
+.add-box{
+	margin-left: 40%;
+	margin-top: 35%;
+	border: 0 !important;
+	background-color: transparent !important;
+	transfo-webkit-transform: translateX(0%) translateY(-40%);
+	   -moz-transform: translateX(0%) translateY(-40%);
+	    -ms-transform: translateX(0%) translateY(-40%);
+	     -o-transform: translateX(0%) translateY(-40%);
+	        transform: translateX(0%) translateY(-40%);
+}
+.addBG{
+	height:480px;
+	width: 639px;
+	display:table;
+	float:left;
+}
+
+.addBG:hover{
+	background-color: rgba(0,0,0,0.14);
+	-webkit-transition: background-color 0.7s ease-in-out;
+    -webkit-transition: background-color 0.7s ease-in-out;
+    -o-transition: 		background-color 0.7s ease-in-out;
+    transition:  		background-color 0.7s ease-in-out;
+}
+.addBG:hover .plus-sign{
+	color:#2c3e50 !important;
+	-webkit-transition: color 0.7s ease-in-out;
+    -webkit-transition: color 0.7s ease-in-out;
+    -o-transition: 		color 0.7s ease-in-out;
+    transition:  		color 0.7s ease-in-out;
+}
+
+.plus-sign:active{
+	visibility: ;
+}
+
+/*iframe on top of hover elements*/
+iframe{
+	position:relative;
+	z-index:5000;
+}
