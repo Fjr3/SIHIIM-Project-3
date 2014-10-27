@@ -113,9 +113,7 @@
             </li>
             <li>
             	<img id="circleFocus" src="img/Drive API/circle_Focus.gif" alt=""/>
-                <a href="googleAPI.html">
-                	<img id="driveLogo" src="img/Drive API/Drive_Logo.png" alt=""/>
-                </a>
+                <img id="driveLogo" src="img/Drive API/Drive_Logo.png" alt=""/>
             </li>
         </ul>
         <ul class="nav nav-pills nav-stacked col-lg-2 bottom">
@@ -231,6 +229,10 @@
                     $('#circleFocus').css('display', 'none');
                 });
                 // Put here improve a lil bit of performance
+				//click to link to drive (use css overlapped too many !important elements, hard to fix)
+				$("#driveLogo").click(function(event){
+                    window.location = 'googleAPI.html';
+                });
         </script>
     </body>
 </html>

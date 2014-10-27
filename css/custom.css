@@ -756,8 +756,8 @@ p {
 	box-shadow: inset 2px -2px 0px 0px rgba(0,0,0,0.2); 
 }
 
-.left-nav a:hover, .bottom a:hover{
-	background-color:#3498db !important;
+.left-nav a:hover, .bottom~a:hover{
+	background-color:#3498db !important; 
 	border-radius:0 !important;
 	color:#FFF !important;
 	padding:12px !important;
@@ -817,9 +817,7 @@ p {
 	margin-top:30%;
 	margin-left:30%;
 }
-#driveLogo:hover{
-	background-color:transparent !important;
-}
+
 #custom-gallery #circleFocus{
 	width: 60%;
 	height: auto;
