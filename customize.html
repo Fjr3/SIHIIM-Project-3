@@ -43,13 +43,6 @@
             $("#rel2").lightGallery({loop:true,rel:true});
 			$("#rel3").lightGallery({loop:true,rel:true});
          // **************
-         // Grayscale hover
-        $('img').hover(function() {
-                $(this).addClass('grayscale');
-            }, function() {
-                $(this).removeClass('grayscale');
-            });
-        // ************
 		});
 
         </script>
@@ -119,7 +112,10 @@
                 </ul>
             </li>
             <li>
-                <img src="img/Drive API/Drive_Logo.png" width="117" height="101" alt=""/>
+            	<img id="circleFocus" src="img/Drive API/circle_Focus.gif" alt=""/>
+                <a href="googleAPI.html">
+                	<img id="driveLogo" src="img/Drive API/Drive_Logo.png" alt=""/>
+                </a>
             </li>
         </ul>
         <ul class="nav nav-pills nav-stacked col-lg-2 bottom">
@@ -219,6 +215,23 @@
             </table>
         </section>
         <!-- ******************* -->
+
+        <script type="text/javascript">
+                 // Grayscale hover
+                $('img').hover(function() {
+                        $(this).addClass('grayscale');
+                    }, function() {
+                        $(this).removeClass('grayscale');
+                    });
+                // ************
+                //Hover Google Logo for circle animation
+                $('#driveLogo').hover(function() {
+                    $('#circleFocus').css('display', 'block');
+                }, function() {
+                    $('#circleFocus').css('display', 'none');
+                });
+                // Put here improve a lil bit of performance
+        </script>
     </body>
 </html>
 
