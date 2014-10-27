@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--mobile -->
+    <title>Simplified - High Quality - Images</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon.ico">
+    
+    <!-- CSS links -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <link rel="stylesheet" type="text/css" href="css/scrolling-nav.css">
+    <link rel="stylesheet" type="text/css" href="css/lightGallery.css">
+    <!----> 
+    <!-- Javascript links -->
+    <script type="text/javascript">
+
+      // The Browser API key obtained from the Google Developers Console.
+      var developerKey = 'AIzaSyBuc0q-hqpiJVHFM0FcIS-Dvpo2U9cPX9s';
+
+      // The Client ID obtained from the Google Developers Console.
+      var clientId = '971144361999-ahin8hn6vqh6q9fv27u298ttq9lc6jvk.apps.googleusercontent.com';
+
+      // Scope to use to access user's photos.
+      var scope = ['https://www.googleapis.com/auth/photos'];
+
+      var pickerApiLoaded = false;
+      var oauthToken;
+      var numSelected = 1;
+
+      // Use the API Loader script to load google.picker and gapi.auth.
+      function onApiLoad() {
+        gapi.load('auth', {'callback': onAuthApiLoad});
+        gapi.load('picker', {'callback': onPickerApiLoad});
+      }
+
+      function onAuthApiLoad() {
+        window.gapi.auth.authorize(
+            {
+              'client_id': clientId,
+              'scope': scope,
+              'immediate': false
+            },
+            handleAuthResult);
+      }
+
+      function onPickerApiLoad(num) {
+        pickerApiLoaded = true;
+        createPicker();
+        this.numSelected = num;
+      }
+
+      function handleAuthResult(authResult) {
+        if (authResult && !authResult.error) {
+          oauthToken = authResult.access_token;
+          // createPicker();
+        }
+      }
+
+      // Create and render a Picker object for picking user Photos.
+      function createPicker() {
+        // var view = new google.picker.View(google.picker.ViewId.DOCS); //view all files in Google Drive
+        if (pickerApiLoaded && oauthToken) {
+          var picker = new google.picker.PickerBuilder().
+                           // enableFeature(google.picker.Feature.MULTISELECT_ENABLED).
+                           // addView(google.picker.View(google.picker.ViewId.DOCS)).
+                           // addview(google.picker.ViewId.DOCS).
+                           addView(google.picker.ViewId.DOCS_IMAGES).       //Google Drive Photo
+                           // addView(google.picker.ViewId.PHOTOS).            //Picasa Web Album Photos
+                           // addView(google.picker.ViewId.PHOTO_UPLOAD).      //Upload to Picasa Web Albums
+                        // addView(google.picker.​View(google.picker.RECENTLY_PICKED).
+                           // addView(view).
+                           addView(new google.picker.DocsUploadView()).
+                           setOAuthToken(oauthToken).
+                           setDeveloperKey(developerKey).
+                           setCallback(pickerCallback).
+                           build();
+
+          picker.setVisible(true);
+        }
+      }
+
+      // A simple callback implementation.
+      function pickerCallback(data) {
+        var url = 'nothing';
+        if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED) {
+          var doc = data[google.picker.Response.DOCUMENTS][0];
+          url = doc[google.picker.Document.URL];
+        }
+        var frame = url;
+		console.log("IMAGE BEING DISPLAYED");
+        switch (numSelected){
+          case 1:
+            if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
+              document.getElementById("myFrame").style.display = 'inline';
+              document.getElementById("myFrame").src = frame;
+            }
+            break;
+          case 2:
+            if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
+              document.getElementById("myFrame").style.display = 'inline';
+              document.getElementById("myFrame").src = frame;
+            }
+            break;
+          case 3:
+            if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
+              document.getElementById("myFrame").style.display = 'inline';
+              document.getElementById("myFrame").src = frame;
+            }
+            break;
+          case 4:
+            if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
+              document.getElementById("myFrame").style.display = 'inline';
+              document.getElementById("myFrame").src = frame;
+            }
+            break;
+          case 5:
+            if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
+              document.getElementById("myFrame").style.display = 'inline';
+              document.getElementById("myFrame").src = frame;
+            }
+            break;
+          case 6:
+            if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
+              document.getElementById("myFrame").style.display = 'inline';
+              document.getElementById("myFrame").src = frame;
+            }
+            break;
+          default:
+            break;
+        }
+      }
+
+    </script>
+  </head>
+  <body id="drive-page">
+  <header>
+      <img class="drivePage-logo" src="img/Logo_notxt.png" width="auto" height="40px" alt=""/>
+      <span id="linkSymbol" class="glyphicon glyphicon-link"></span>
+      <img class="drivePage-logo" src="img/Drive API/Drive_Logo.png" width="auto" height="40px" alt=""/>
+      <h1 style="padding-left:20px;color:#7f8c8d" id="titleEdit" contenteditable="true">... gallery name</h1>
+      <div class="btn btn-lg btn-danger addBtn btn-style"><span class="glyphicon glyphicon-plus"></span><strong>  Add</strong></div>
+  </header>
+  <div class="addBG">
+      <div style="height:450px; width:610px; position:absolute">
+          <button class="add-box" onclick="onPickerApiLoad(1)"><span class="glyphicon glyphicon-plus-sign plus-sign"></span></button>
+      </div>
+      <iframe style="display:none" id="myFrame" width="639" height="480"></iframe>
+  </div>
+  <div class="addBG">
+      <div style="height:450px; width:615px; position:absolute">
+          <button class="add-box" onclick="onPickerApiLoad(2)"><span class="glyphicon glyphicon-plus-sign plus-sign"></span></button>
+      </div>
+      <iframe style="display:none" id="myFrame2" width="639" height="480"></iframe>
+  </div>
+  <div class="addBG">
+      <div style="height:450px; width:615px; position:absolute">
+          <button class="add-box" onclick="onPickerApiLoad(3)"><span class="glyphicon glyphicon-plus-sign plus-sign"></span></button>
+      </div>
+      <iframe style="display:none" id="myFrame3" width="639" height="480"></iframe>
+  </div>
+  <div class="addBG">
+      <div style="height:450px; width:615px; position:absolute">
+          <button class="add-box" onclick="onPickerApiLoad(4)"><span class="glyphicon glyphicon-plus-sign plus-sign"></span></button>
+      </div>
+      <iframe style="display:none" id="myFrame4" width="639" height="480"></iframe>
+  </div>
+  <div class="addBG">
+      <div style="height:450px; width:615px; position:absolute">
+          <button class="add-box" onclick="onPickerApiLoad(5)"><span class="glyphicon glyphicon-plus-sign plus-sign"></span></button>
+      </div>
+      <iframe style="display:none" id="myFrame5" width="639" height="480"></iframe>
+  </div>
+  <div class="addBG">
+      <div style="height:450px; width:615px; position:absolute">
+          <button class="add-box" onclick="onPickerApiLoad(6)"><span class="glyphicon glyphicon-plus-sign plus-sign"></span></button>
+      </div>
+      <iframe style="display:none" id="myFrame6" width="639" height="480"></iframe>
+  </div>
+  <!-- The Google API Loader script. -->
+  <script type="text/javascript" src="https://apis.google.com/js/api.js?onload=onApiLoad"></script>
+  <script id="IntercomSettingsScriptTag">
+  window.intercomSettings = {"email":"jimmyvuw2@gmail.com","created_at":1413428745,"user_id":30764,"user_hash":"1a9ef987d5f366a5a93ac185a46d4441dfcd183a5ebd69983106ed5626511781","app_id":"fafb1612635c49d90fa756b7d37f7bcedca29586"};
+  </script>
+  <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://static.intercomcdn.com/intercom.v1.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}};})()</script>
+  <!-- Put at the end for a better performance -->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/custom-hover.js"></script>
+  <script>
+    $('#titleEdit').click(function(event) {
+      /* Act on the event */
+      $(this).css({
+        color: '#fff',
+      });
+    });
+  </script>
+</body>
+</html>
