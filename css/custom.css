@@ -876,24 +876,8 @@ iframe{
 #addBtn{
 	text-align: center;
 	vertical-align: middle;
+	float:right;
 }
 #drive-page .btn-style{
 	margin:1%;
-	float:right;
-}
-#drive-page h1{
-	display: inline-table;
-	vertical-align: middle;
-	margin: 0;
-	color:#fff;
-}
-#titleEdit{
-	-webkit-transition: color 0.7s ease-in-out;
-    -webkit-transition: color 0.7s ease-in-out;
-    -o-transition: 		color 0.7s ease-in-out;
-    transition:  		color 0.7s ease-in-out;
-}
-button:focus,
-input:focus{
-	outline: none;
 }
