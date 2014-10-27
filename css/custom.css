@@ -897,3 +897,22 @@ button:focus,
 input:focus{
 	outline: none;
 }
+#drive-page #pinFooter {
+	width: 3%;
+	left: 93%;
+	height: 6%;
+	border-top-left-radius: 20%;
+	border-top-right-radius: 20%;
+}
+
+#pinFooter{
+	bottom:-40px;	
+}
+#pinFooter:hover{
+	bottom:0px;	
+	-webkit-transition: bottom 0.4s ease-in-out;
+    -webkit-transition: bottom 0.4s ease-in-out;
+    -o-transition: 		bottom 0.4s ease-in-out;
+    transition:  		bottom 0.4s ease-in-out;
+
+}
