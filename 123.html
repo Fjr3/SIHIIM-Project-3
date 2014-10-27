@@ -93,32 +93,32 @@
             break;
           case 2:
             if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
-              document.getElementById("myFrame").style.display = 'inline';
-              document.getElementById("myFrame").src = frame;
+              document.getElementById("myFrame2").style.display = 'inline';
+              document.getElementById("myFrame2").src = frame;
             }
             break;
           case 3:
             if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
-              document.getElementById("myFrame").style.display = 'inline';
-              document.getElementById("myFrame").src = frame;
+              document.getElementById("myFrame3").style.display = 'inline';
+              document.getElementById("myFrame3").src = frame;
             }
             break;
           case 4:
             if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
-              document.getElementById("myFrame").style.display = 'inline';
-              document.getElementById("myFrame").src = frame;
+              document.getElementById("myFrame4").style.display = 'inline';
+              document.getElementById("myFrame4").src = frame;
             }
             break;
           case 5:
             if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
-              document.getElementById("myFrame").style.display = 'inline';
-              document.getElementById("myFrame").src = frame;
+              document.getElementById("myFrame5").style.display = 'inline';
+              document.getElementById("myFrame5").src = frame;
             }
             break;
           case 6:
             if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
-              document.getElementById("myFrame").style.display = 'inline';
-              document.getElementById("myFrame").src = frame;
+              document.getElementById("myFrame6").style.display = 'inline';
+              document.getElementById("myFrame6").src = frame;
             }
             break;
           	default:
@@ -190,6 +190,28 @@
       $(this).css({
         color: '#fff',
       });
+    });
+    /*Add button function*/
+    $('.addBtn').click(function(event) {
+      /* Act on the event */
+      if ($('#myFrame').attr('display', 'none')){
+        onPickerApiLoad(1);        
+      }
+      else if ($('#myFrame2').attr('display', 'none')){
+        onPickerApiLoad(2);        
+      }
+      else if ($('#myFrame3').attr('display', 'none')){
+        onPickerApiLoad(3);        
+      }
+      else if ($('#myFrame4').attr('display', 'none')){
+        onPickerApiLoad(4);        
+      }
+      else if ($('#myFrame5').attr('display', 'none')){
+        onPickerApiLoad(5);        
+      }
+      else {
+        onPickerApiLoad(6);        
+      }
     });
   </script>
 </body>
