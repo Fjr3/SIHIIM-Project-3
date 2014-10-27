@@ -65,14 +65,7 @@
         // var view = new google.picker.View(google.picker.ViewId.DOCS); //view all files in Google Drive
         if (pickerApiLoaded && oauthToken) {
           var picker = new google.picker.PickerBuilder().
-                           // enableFeature(google.picker.Feature.MULTISELECT_ENABLED).
-                           // addView(google.picker.View(google.picker.ViewId.DOCS)).
-                           // addview(google.picker.ViewId.DOCS).
                            addView(google.picker.ViewId.DOCS_IMAGES).       //Google Drive Photo
-                           // addView(google.picker.ViewId.PHOTOS).            //Picasa Web Album Photos
-                           // addView(google.picker.ViewId.PHOTO_UPLOAD).      //Upload to Picasa Web Albums
-                        // addView(google.picker.​View(google.picker.RECENTLY_PICKED).
-                           // addView(view).
                            addView(new google.picker.DocsUploadView()).
                            setOAuthToken(oauthToken).
                            setDeveloperKey(developerKey).
@@ -91,7 +84,6 @@
           url = doc[google.picker.Document.URL];
         }
         var frame = url;
-		console.log("IMAGE BEING DISPLAYED");
         switch (numSelected){
           case 1:
             if (data[google.picker.Response.ACTION] == google.picker.Action.PICKED){ //check if picked again... otherwise it will show error message cancelling picker
@@ -129,7 +121,7 @@
               document.getElementById("myFrame").src = frame;
             }
             break;
-          default:
+          	default:
             break;
         }
       }
@@ -142,7 +134,7 @@
       <span id="linkSymbol" class="glyphicon glyphicon-link"></span>
       <img class="drivePage-logo" src="img/Drive API/Drive_Logo.png" width="auto" height="40px" alt=""/>
       <h1 style="padding-left:20px;color:#7f8c8d" id="titleEdit" contenteditable="true">... gallery name</h1>
-      <div class="btn btn-lg btn-danger addBtn btn-style" onclick="onPickerApiLoad(1)"><span class="glyphicon glyphicon-plus"></span><strong>  Add</strong></div>
+      <div class="btn btn-lg btn-danger addBtn btn-style"><span class="glyphicon glyphicon-plus"></span><strong>  Add</strong></div>
   </header>
   <div class="addBG">
       <div style="height:450px; width:610px; position:absolute">
